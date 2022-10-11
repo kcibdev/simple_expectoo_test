@@ -9,7 +9,7 @@ const loginUser = async (userInfo) => {
   const res = await axios.post(LOGIN_URI, userInfo);
   console.log(res);
   if (res.data && res.data.success) {
-    //set to local storage
+    //set to local storage or any other state management library
     localStorage.setItem("user", JSON.stringify(res.data.data));
   }
   return res.data;
@@ -19,7 +19,7 @@ const registerUser = async (userInfo) => {
   const res = await axios.post(REGISTER_URI, userInfo);
   console.log(res);
   if (res.data && res.data.success) {
-    //set to local storage
+    //set to local storage or any other state management library
     localStorage.setItem("user", JSON.stringify(res.data.data));
   }
   return res.data;
