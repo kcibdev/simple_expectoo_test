@@ -34,6 +34,7 @@ const loginController = async (req, res) => {
     In MySQL
     SELECT * FROM users WHERE email = email OR username = username; */
 
+    //Just generated a random user id and token to fill the response
     const userId = genRandom(24);
     const token = generateJWTToken(userId);
 
@@ -70,6 +71,7 @@ const registerController = async (req, res) => {
     a generated token and a user id and the required user details but if i was given a database i would have hashed the password and saved the
     user details in the user table and then return a response with registration successful, */
 
+    //Just generated a random user id and token to fill the response
     const userId = genRandom(24);
     const token = generateJWTToken(userId);
 

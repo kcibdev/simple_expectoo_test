@@ -9,7 +9,7 @@ const Login = () => {
     password: "",
   });
 
-  const onChangeInput = (e) => {
+  const onInputChange = (e) => {
     const { name, value } = e.target;
     setFormData((prev) => ({
       ...prev,
@@ -49,6 +49,10 @@ const Login = () => {
 
     //User successfully registered
     toast.success(login.message);
+    setFormData({
+      emailUsername: "",
+      password: "",
+    });
   };
 
   return (
@@ -65,7 +69,7 @@ const Login = () => {
                 placeholder="Email Or Username"
                 name="emailUsername"
                 className="auth__input emailUsername"
-                onChange={onChangeInput}
+                onChange={onInputChange}
                 value={formData.emailUsername}
               />
             </label>
@@ -75,7 +79,7 @@ const Login = () => {
                 placeholder="Password"
                 name="password"
                 className="auth__input password"
-                onChange={onChangeInput}
+                onChange={onInputChange}
                 value={formData.password}
               />
             </label>
