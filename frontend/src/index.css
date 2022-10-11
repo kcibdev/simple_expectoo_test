@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;800&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+}
+
+.auth {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.auth__container {
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  border-radius: 2px;
+  padding: 20px;
+  width: 100%;
+  max-width: 450px;
+}
+
+.auth__header {
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.auth__subheader {
+  margin-top: 8px;
+  text-align: center;
+}
+
+.auth__form--body {
+  margin-top: 12px;
+}
+
+.auth__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.auth__input {
+  padding: 12px;
+  border-radius: 4px;
+  outline: none;
+  width: 100%;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+}
+
+.auth__btn {
+  padding: 10px 0;
+  margin-top: 8px;
+  background-color: #ed2190;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  font-weight: 600;
+  font-family: "Nunito", sans-serif;
+  cursor: pointer;
+}
+
+.auth__account {
+  margin-top: 12px;
+  text-align: center;
+  font-size: 14px;
+  color: #ccc;
+}
+
+.auth__account span {
+  color: #ed2190;
+  font-weight: 600;
+}
